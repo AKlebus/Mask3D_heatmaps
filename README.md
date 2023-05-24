@@ -14,4 +14,7 @@ This should be it for the environment. If you encounter that something is missin
 First download the processed ScanNet200 data from X. Store the scannet200 folder in ../data/processed/. **Important**: Make a copy of this folder in the same directory, and call it scannet. This is currently nessasary as the repo sometimes interchanges these. I may fix this later if I have time. Then download the scannet200 **test** checkpoint (can be found in the main readme), and store it under /checkpoints/scannet200/. Make sure to not change any filenames!
 
 ## Step4: Run the inference script
-Running the *inference.sh* script will use the downloaded checkpoint to do inference on the processed data, namely all data in the train folder:
+Running the *inference.sh* script will use the downloaded checkpoint to do inference on the processed data, namely all data in the train folder.
+
+### Original Mask3D
+[https://jonasschult.github.io/Mask3D/](https://jonasschult.github.io/Mask3D/)
