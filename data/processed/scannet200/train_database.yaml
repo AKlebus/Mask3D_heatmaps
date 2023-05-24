@@ -1,0 +1,19 @@
+- color_mean:
+  - 0.4269150394966132
+  - 0.40049907595469425
+  - 0.3594566376805979
+  color_std:
+  - 0.21680443770945665
+  - 0.19362541098315014
+  - 0.163824455810264
+  file_len: 145736
+  filepath: /home/adam2/Mask3D-main/data/processed/scannet/train/0191_00.npy
+  instance_gt_filepath: /home/adam2/Mask3D-main/data/processed/scannet/instance_gt/train/scene0191_00.txt
+  raw_description_filepath: /home/adam2/ScanNet_raw/scans/scene0191_00/scene0191_00.txt
+  raw_filepath: /home/adam2/ScanNet_raw/scans/scene0191_00/scene0191_00_vh_clean_2.ply
+  raw_instance_filepath: /home/adam2/ScanNet_raw/scans/scene0191_00/scene0191_00.aggregation.json
+  raw_label_filepath: /home/adam2/ScanNet_raw/scans/scene0191_00/scene0191_00_vh_clean_2.labels.ply
+  raw_segmentation_filepath: /home/adam2/ScanNet_raw/scans/scene0191_00/scene0191_00_vh_clean_2.labels.0.010000.segs.json
+  scene: 191
+  scene_type: Misc.
+  sub_scene: 0

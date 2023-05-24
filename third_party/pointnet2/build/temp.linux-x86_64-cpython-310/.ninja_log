@@ -1,0 +1,10 @@
+# ninja log v5
+1	14516	1683114002341919101	/home/adam2/Mask3D-main/third_party/pointnet2/build/temp.linux-x86_64-cpython-310/_ext_src/src/interpolate_gpu.o	36ddd688f24374d4
+1	14674	1683114002501919860	/home/adam2/Mask3D-main/third_party/pointnet2/build/temp.linux-x86_64-cpython-310/_ext_src/src/group_points_gpu.o	a8577f741d3a8844
+1	16208	1683114004033927123	/home/adam2/Mask3D-main/third_party/pointnet2/build/temp.linux-x86_64-cpython-310/_ext_src/src/sampling.o	34ce531d03068fa8
+1	16423	1683114004249928148	/home/adam2/Mask3D-main/third_party/pointnet2/build/temp.linux-x86_64-cpython-310/_ext_src/src/group_points.o	3e245ab9d675a9d
+0	16431	1683114004257928186	/home/adam2/Mask3D-main/third_party/pointnet2/build/temp.linux-x86_64-cpython-310/_ext_src/src/ball_query.o	e0c9a8d6e543afea
+1	16497	1683114004321928488	/home/adam2/Mask3D-main/third_party/pointnet2/build/temp.linux-x86_64-cpython-310/_ext_src/src/interpolate.o	e54cbaba45ce6334
+1	17307	1683114005133932339	/home/adam2/Mask3D-main/third_party/pointnet2/build/temp.linux-x86_64-cpython-310/_ext_src/src/sampling_gpu.o	8abaf5a9fb36b6eb
+1	18426	1683114006253937651	/home/adam2/Mask3D-main/third_party/pointnet2/build/temp.linux-x86_64-cpython-310/_ext_src/src/bindings.o	7887955d9027611a
+0	18659	1683114006485938749	/home/adam2/Mask3D-main/third_party/pointnet2/build/temp.linux-x86_64-cpython-310/_ext_src/src/ball_query_gpu.o	57f92430d46df4f2

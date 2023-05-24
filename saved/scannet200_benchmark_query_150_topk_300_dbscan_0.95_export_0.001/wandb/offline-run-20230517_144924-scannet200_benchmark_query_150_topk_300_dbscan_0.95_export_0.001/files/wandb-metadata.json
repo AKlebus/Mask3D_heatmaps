@@ -1,0 +1,136 @@
+{
+    "os": "Linux-5.15.0-71-generic-x86_64-with-glibc2.31",
+    "python": "3.10.6",
+    "heartbeatAt": "2023-05-17T12:49:24.643500",
+    "startedAt": "2023-05-17T12:49:24.606719",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "general.experiment_name=scannet200_benchmark_query_150_topk_300_dbscan_0.95_export_0.001",
+        "general.project_name=scannet200_eval",
+        "general.checkpoint=checkpoints/scannet200/scannet200_benchmark.ckpt",
+        "data/datasets=scannet200",
+        "general.num_targets=201",
+        "data.num_labels=200",
+        "general.eval_on_segments=true",
+        "general.train_on_segments=true",
+        "general.train_mode=false",
+        "model.num_queries=150",
+        "general.topk_per_image=300",
+        "general.use_dbscan=true",
+        "general.dbscan_eps=0.95",
+        "general.export=true",
+        "data.test_mode=test",
+        "general.export_threshold=0.001"
+    ],
+    "state": "running",
+    "program": "/home/adam2/Mask3D-main/main_instance_segmentation.py",
+    "codePath": "main_instance_segmentation.py",
+    "host": "yassir-MS-7D11",
+    "username": "adam2",
+    "executable": "/home/adam2/anaconda3/envs/mask3d/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3837.7468125,
+        "min": 800.0,
+        "max": 5181.25
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 4403.949,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3800.0,
+            "min": 800.0,
+            "max": 5200.0
+        }
+    ],
+    "disk": {
+        "total": 915.3232879638672,
+        "used": 150.78311920166016
+    },
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 31.250186920166016
+    }
+}

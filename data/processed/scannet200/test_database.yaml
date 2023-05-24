@@ -1,0 +1,5 @@
+- file_len: 134360
+  filepath: /home/adam2/Mask3D-main/data/processed/scannet/test/0707_00.npy
+  raw_filepath: /home/adam2/ScanNet_raw/scans_test/scene0707_00/scene0707_00_vh_clean_2.ply
+  scene: 707
+  sub_scene: 0

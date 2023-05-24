@@ -1,0 +1,12 @@
+- general.experiment_name=benchmark_query_150_topk_300_dbscan_0.95
+- general.project_name=scannet_eval
+- general.checkpoint=checkpoints/scannet/scannet_benchmark.ckpt
+- general.eval_on_segments=true
+- general.train_on_segments=true
+- general.train_mode=false
+- general.export=true
+- data.test_mode=test
+- model.num_queries=150
+- general.topk_per_image=300
+- general.use_dbscan=true
+- general.dbscan_eps=0.95

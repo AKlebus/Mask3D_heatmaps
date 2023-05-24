@@ -1,0 +1,19 @@
+- color_mean:
+  - 0.4183110513674998
+  - 0.3578838243750392
+  - 0.28208551203646226
+  color_std:
+  - 0.2308635913258322
+  - 0.17617945609003763
+  - 0.11394480192515027
+  file_len: 232453
+  filepath: /home/adam2/Mask3D-main/data/processed/scannet/validation/0568_00.npy
+  instance_gt_filepath: /home/adam2/Mask3D-main/data/processed/scannet/instance_gt/validation/scene0568_00.txt
+  raw_description_filepath: /home/adam2/ScanNet_raw/scans/scene0568_00/scene0568_00.txt
+  raw_filepath: /home/adam2/ScanNet_raw/scans/scene0568_00/scene0568_00_vh_clean_2.ply
+  raw_instance_filepath: /home/adam2/ScanNet_raw/scans/scene0568_00/scene0568_00_vh_clean.aggregation.json
+  raw_label_filepath: /home/adam2/ScanNet_raw/scans/scene0568_00/scene0568_00_vh_clean_2.labels.ply
+  raw_segmentation_filepath: /home/adam2/ScanNet_raw/scans/scene0568_00/scene0568_00_vh_clean_2.0.010000.segs.json
+  scene: 568
+  scene_type: Living room / Lounge
+  sub_scene: 0

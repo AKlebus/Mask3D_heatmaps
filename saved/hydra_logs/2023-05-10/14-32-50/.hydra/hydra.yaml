@@ -1,0 +1,147 @@
+hydra:
+  run:
+    dir: saved/hydra_logs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  sweep:
+    dir: saved/hydra_logs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}_${hydra.job.id}
+  hydra_logging:
+    version: 1
+    formatters:
+      simple:
+        format: '[%(asctime)s][HYDRA] %(message)s'
+    handlers:
+      console:
+        class: logging.StreamHandler
+        formatter: simple
+        stream: ext://sys.stdout
+    root:
+      level: INFO
+      handlers:
+      - console
+    loggers:
+      logging_example:
+        level: DEBUG
+    disable_existing_loggers: false
+  job_logging:
+    version: 1
+    formatters:
+      simple:
+        format: '[%(asctime)s][%(name)s][%(levelname)s] - %(message)s'
+    handlers:
+      console:
+        class: logging.StreamHandler
+        formatter: simple
+        stream: ext://sys.stdout
+      file:
+        class: logging.FileHandler
+        formatter: simple
+        filename: ${hydra.job.name}.log
+    root:
+      level: INFO
+      handlers:
+      - console
+      - file
+    disable_existing_loggers: false
+  sweeper:
+    _target_: hydra._internal.core_plugins.basic_sweeper.BasicSweeper
+    max_batch_size: null
+  launcher:
+    _target_: hydra._internal.core_plugins.basic_launcher.BasicLauncher
+  help:
+    app_name: ${hydra.job.name}
+    header: '${hydra.help.app_name} is powered by Hydra.
+
+      '
+    footer: 'Powered by Hydra (https://hydra.cc)
+
+      Use --hydra-help to view Hydra specific help
+
+      '
+    template: '${hydra.help.header}
+
+      == Configuration groups ==
+
+      Compose your configuration from those groups (group=option)
+
+
+      $APP_CONFIG_GROUPS
+
+
+      == Config ==
+
+      Override anything in the config (foo.bar=value)
+
+
+      $CONFIG
+
+
+      ${hydra.help.footer}
+
+      '
+  hydra_help:
+    hydra_help: ???
+    template: 'Hydra (${hydra.runtime.version})
+
+      See https://hydra.cc for more info.
+
+
+      == Flags ==
+
+      $FLAGS_HELP
+
+
+      == Configuration groups ==
+
+      Compose your configuration from those groups (For example, append hydra/job_logging=disabled
+      to command line)
+
+
+      $HYDRA_CONFIG_GROUPS
+
+
+      Use ''--cfg hydra'' to Show the Hydra config.
+
+      '
+  output_subdir: .hydra
+  overrides:
+    hydra: []
+    task:
+    - general.experiment_name=benchmark_03_query__topk__dbscan__size__T_
+    - general.project_name=stpls3d_eval
+    - data/datasets=stpls3d
+    - general.num_targets=15
+    - data.num_labels=15
+    - data.voxel_size=0.333
+    - data.num_workers=10
+    - data.cache_data=true
+    - data.cropping_v1=false
+    - general.reps_per_epoch=100
+    - model.num_queries=
+    - general.on_crops=true
+    - model.config.backbone._target_=models.Res16UNet18B
+    - general.train_mode=false
+    - general.checkpoint=checkpoints/stpls3d/stpls3d_benchmark_03.ckpt
+    - data.crop_length=
+    - general.eval_inner_core=50.0
+    - general.topk_per_image=
+    - general.use_dbscan=true
+    - general.dbscan_eps=
+    - data.test_mode=test
+    - general.export=true
+  job:
+    name: main_instance_segmentation
+    override_dirname: data.cache_data=true,data.crop_length=,data.cropping_v1=false,data.num_labels=15,data.num_workers=10,data.test_mode=test,data.voxel_size=0.333,data/datasets=stpls3d,general.checkpoint=checkpoints/stpls3d/stpls3d_benchmark_03.ckpt,general.dbscan_eps=,general.eval_inner_core=50.0,general.experiment_name=benchmark_03_query__topk__dbscan__size__T_,general.export=true,general.num_targets=15,general.on_crops=true,general.project_name=stpls3d_eval,general.reps_per_epoch=100,general.topk_per_image=,general.train_mode=false,general.use_dbscan=true,model.config.backbone._target_=models.Res16UNet18B,model.num_queries=
+    id: ???
+    num: ???
+    config_name: config_base_instance_segmentation.yaml
+    env_set: {}
+    env_copy: []
+    config:
+      override_dirname:
+        kv_sep: '='
+        item_sep: ','
+        exclude_keys: []
+  runtime:
+    version: 1.0.5
+    cwd: /home/adam2/Mask3D-main
+  verbose: false
